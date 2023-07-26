@@ -1,0 +1,686 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+ul li a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.menu-list{
+    display: flex;
+    margin-bottom: 0;
+}
+.menu-list li a{
+    font-size: 16.67px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0 20px;
+    color: #3d2514;
+}
+.menu-list li a:hover{
+    color: #00FFFB;
+    text-decoration: none;
+    transition: 0.8s;
+}
+.vector-img{
+    text-align: center;
+}
+.vector-img span{
+    font-size: 16.67px;
+    font-weight: bold;
+    color: #3d2514;
+}
+.header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 5;
+}
+.header.sticky{
+    background-color: #ffc657;
+}
+.icon{
+    color: #3d2514;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+.icon.close-btn{
+    position: absolute;
+    top:14px;
+    right: 6%;
+    z-index: 5;
+}
+
+.baner{
+    background-image: url("image/bugbg1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 825px;
+}
+.baner-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 825px;
+}
+.baner-content h4{
+    font-size: 23.65px;
+    font-weight: bold;
+    color: #3d2514;
+    border: 1px dashed #3d2514;
+    width: 60%;
+    text-align: center;
+    text-transform: uppercase;
+}
+.baner-content h1{
+    font-size: 114.3px;
+    font-weight: bold;
+    color: #3d2514;
+    text-transform: uppercase;
+    text-shadow:0 5px white;
+}
+.baner-content p{
+    font-size: 56.49px;
+    font-weight: bold;
+    color: #3d2514;
+    text-transform: uppercase;
+    text-shadow:0 5px white;
+}
+
+.more-burg{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 565px;
+    margin-top: 8%;
+}
+.more-burg-img img{
+    position: absolute;
+    width: 100%;
+}
+.more-content{
+    position: relative;
+    padding-left: 5%;
+    padding-top: 5%;
+}
+.more-content h3{
+    font-size: 25px;
+    color: white;
+    text-transform: uppercase;
+}
+.more-content h1{
+    font-size: 41.67px;
+    color: white;
+    text-transform: uppercase;
+}
+.popular-img{
+  padding-bottom: 8%;
+  padding-left: 5%;
+}
+.popular-img img{
+    position: absolute;
+    width: 100%;
+}
+.popular-content{
+    position: relative;
+    padding-top: 5%;
+    padding-left: 5%;
+}
+.popular-content h3{
+    font-size: 25px;
+    color: white;
+    text-transform: uppercase;
+}
+.popular-content h1{
+    font-size: 41.67px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+.chose{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 900px;
+    text-align: center;
+    padding: 10%;
+}
+.chose-content h3{
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #ffc657;
+    color: #3d2514;
+    width: 30%;
+    transform: translate(380px, 0px);
+    text-transform: uppercase;
+}
+.chose-content h1{
+    font-size: 50px;
+    font-weight: bold;
+    color: #3d2514;
+    text-transform: uppercase;
+}
+.chose-content p{
+    font-size: 16.67px;
+    color: #3d2514;
+}
+.chose-burg img{
+    width: 100%;
+}
+.chose-burg h1{
+    font-size: 30.5px;
+    font-weight: bold;
+    color: #3d2514;
+    text-transform: uppercase;
+}
+.chose-burg p{
+    font-size: 16.67px;
+    color: #3d2514;
+}
+.order-btn button{
+    font-size: 16.67px;
+    font-weight: bold;
+    background-color: #bf2222;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+}
+.order-btn button:hover{
+    background-color: #ffc657;
+    color: #3d2514;
+    border-radius: 30px;
+    transition: 0.8s;
+}
+
+.event{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 630px;
+}
+.event-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 630px;
+}
+.event-content h3{
+    font-size: 29.17px;
+    font-weight: 500;
+    color: #3d3d3d;
+    text-transform: uppercase;
+}
+.event-content h1{
+    font-size: 41.67px;
+    font-weight: bold;
+    color: #3d2514;
+    text-transform: uppercase;
+}
+.event-content p{
+    font-size: 20.83px;
+    color: #3d3d3d;
+}
+.event-img img{
+    width: 100%;
+    border-radius: 30px;
+    transition: 2s linear;
+}
+.event-img{
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: 1px 1px 10px 5px #bf2222;
+    margin-top: 25%;
+}
+.event-img img:hover{
+    transform: scale(1.8);
+}
+
+.book{
+    background-image: url("image/formimg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 675px;
+    text-align: center;
+    padding-top: 7%;
+}
+.book-content h3{
+    font-size: 29.17px;
+    font-weight: 500;
+    color: #3d2514;
+    text-transform: uppercase;
+}
+.book-content h1{
+    font-size: 50px;
+    font-weight: bold;
+    color: #3d2514;
+    text-transform: uppercase;
+}
+.book-content{
+    padding-bottom: 5%;
+}
+.form-input input{
+    width: 100%;
+    padding: 10px 30px;
+    margin: 15px;
+    font-size: 20.83px;
+    font-weight: bold;
+    border: none;
+    box-shadow: 1px 1px 10px 5px #00FFFB;
+}
+.form-btn button{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 20.83px;
+    font-weight: bold;
+    margin: 15px;
+    cursor: pointer;
+    background-color: #bf2222;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    box-shadow: 1px 1px 10px 5px #00FFFB;
+}
+.form-btn button:hover{
+    background-color: #ffc657;
+    color: #3d2514;
+    box-shadow: 1px 1px 10px 5px #bf2222;
+    transition: 0.8s;
+}
+
+.footer{
+    background-image: url("image/footerbg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 525px;
+}
+.foter-burg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 525px;
+}
+.foter-burg-img img{
+    width: 100%;
+}
+.foter-burg-img-content p{
+    color: white;
+    font-size: 16.67px;
+    padding-top: 5%;
+}
+.copy p{
+    font-size: 16.67px;
+    font-weight: bold;
+    color: white;
+}
+.locat span{
+    font-size: 16.67px;
+    font-weight: bold;
+    color: white;
+    padding-left: 20%;
+}
+.social{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 525px;
+}
+.social-icon{
+    display: flex;
+    justify-content: end;
+}
+.social-icon li a{
+    font-size: 25px;
+    margin: 0 20px;
+    padding: 5px 10px;
+    border-radius: 50%;
+    background-color: white;
+    color: #3d2514;
+}
+@media(max-width:1024px){
+    .baner-content h4 {
+        font-size: 20.65px;
+    }
+    .popular-img {
+        padding-bottom:6%;
+        padding-left: 0;
+    }
+    .popular-content {
+        padding-top: 2%;
+    }
+    .more-content h1 {
+        font-size: 35.67px;
+        color: white;
+        text-transform: uppercase;
+    }
+    .chose-content h3 {
+        width: 40%;
+        transform: translate(243px, 0px);
+    }
+    .chose-content p {
+        font-size: 12.67px;
+        color: #3d2514;
+    }
+    .chose-burg h1 {
+        font-size: 21.5px;
+    }
+    .chose-burg p {
+        font-size: 15.67px;
+    }
+    .event-content p {
+        font-size: 17.83px;
+    }
+    .event-img {
+        margin-top: 0;
+    }
+    .event-content{
+        min-height: auto;
+    }
+    .event {
+        min-height: 525px;
+        padding: 10% 0;
+    }
+    .book{
+        min-height: auto;
+    }
+    .foter-burg-img-content p {
+        font-size: 15.67px;
+    }
+    .popular-burg-content{
+        padding-left: 5px;
+    }
+}
+
+@media(max-width:991px){
+    .navbar .menu-list{
+        position: fixed;
+        background: #ffc657;
+        top:6%;
+        left:-100%;
+        width:100%;
+        height:100vh;
+        max-width: 400px;
+        display: block;
+        padding: 50px 0;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+    .menu-list li a:hover{
+        color:rgb(209, 15, 147);
+    }
+    .navbar .menu-list.active{
+        left:0;
+    }
+    .navbar .menu-list li{
+        margin-top: 45px;
+    }
+    .navbar .menu-list li a{
+        font-size: 22px;
+    }
+    .icon, .icon.show{
+        display: block;
+    }
+    .icon.hide{
+        display: none;
+    }
+    .vector-img{
+        display: none;
+    }
+    .baner-content h4 {
+        font-size: 15.65px;
+    }
+    .more-burg-img{
+        margin-bottom: 60%;
+    }
+    .popular-img {
+        padding-bottom: 14%;
+    }
+    .chose-content h3 {
+        width: 50%;
+        transform: translate(163px, 0px);
+    }
+    .chose-content p {
+        font-size: 10.67px;
+    }
+    .event {
+        text-align: center;
+    }
+    .foter-burg,.social{
+        min-height: auto;
+    }
+    .footer{
+        text-align: center;
+    }
+    .locat span{
+        padding-left: 0;
+    }
+    .social-icon{
+        justify-content: center;
+    }
+    .baner{
+        background-position: 100%;
+    }
+    .baner-content{
+        text-align: center;
+    }
+    .baner-content h4{
+        width: 100%;
+    }
+    .book{
+        background-image: none;
+    }
+    .chose-burg{
+        padding-bottom: 5%;
+    }
+}
+@media(max-width:800px){
+    .chose-content p {
+        font-size: 9.67px;
+    }
+    .locat{
+        padding-bottom: 5%;
+    }
+}
+@media(max-width:768px){
+    .baner{
+        min-height: 590px;
+    }
+    .baner-content{
+        min-height: 590px;
+    }
+    .chose-content h3 {
+        width: 70%;
+        transform: translate(68px, 0px);
+    }
+    .chose-content p {
+        font-size: 7.67px;
+    }
+}
+@media(max-width:600px){
+    .more-burg-img img {
+        width: 95%;
+    }
+    .popular-img img {
+        width: 95%;
+    }
+    .chose-content p {
+        font-size: 6.67px;
+    }
+    .chose-burg p {
+        font-size: 14.67px;
+    }
+    .chose-burg{
+        margin-bottom: 5%;
+    }
+}
+@media(max-width:575px){
+    .baner {
+        min-height: 442px;
+    }
+    .baner-content {
+        min-height: 442px;
+    }
+    .form-input input{
+        width: 95%;
+    }
+    .form-btn button{
+        width: 95%;
+    }
+    .baner-content h1 {
+        font-size: 83.3px;
+    }
+    .more-burg-img {
+        margin-bottom: 53%;
+    }
+    .popular-img {
+        padding-bottom: 3%;
+    }
+    .chose-content h1 {
+        font-size: 41px;
+    }
+    .chose-content h3 {
+        width: 90%;
+        transform: translate(23px, 0px);
+    }
+}
+@media(max-width:480px){
+    .baner-content h4 {
+        font-size: 14.65px;
+    }
+    .more-content h1 {
+        font-size: 30.67px;
+    }
+    .more-burg-img img {
+        width: 93%;
+    }
+    .popular-content h1 {
+        font-size: 30.67px;
+    }
+    .popular-img img {
+        width: 93%;
+    }
+    .chose-content h3 {
+        width: 100%;
+        transform: translate(0px, 0px);
+    }
+    .chose-content h1 {
+        font-size: 36px;
+    }
+    .event-content h1 {
+        font-size: 39.67px;
+        font-weight: bold;
+        color: #3d2514;
+        text-transform: uppercase;
+    }
+    .event-content p {
+        font-size: 15.83px;
+    }
+    .book-content h1 {
+        font-size: 41px;
+    }
+    .foter-burg-img-content p {
+        font-size: 13.67px;
+    }
+}
+@media(max-width:420px){
+    .navbar .menu-list{
+        max-width: 250px;
+    }
+    .baner-content h4 {
+        font-size: 12.65px;
+    }
+    .baner {
+        min-height: 300px;
+    }
+    .baner-content {
+        min-height: 300px;
+    }
+    .baner-content h1 {
+        font-size: 57.3px;
+    }
+    .baner-content{
+        padding-top: 26%;
+    }
+    .more-content h1 {
+        font-size: 26.67px;
+    }
+    .popular-content h1 {
+        font-size: 25.67px;
+    }
+    .chose-content h3 {
+        font-size: 23px;
+    }
+    .chose-content h1 {
+        font-size: 31px;
+    }
+    .event-content h1 {
+        font-size: 34.67px;
+    }
+    .event-content p {
+        font-size: 13.83px;
+    }
+    .book-content h1 {
+        font-size: 37px;
+    }
+    .foter-burg-img-content p {
+        font-size: 11.67px;
+    }
+}
+@media(max-width:375px){
+    .logo img{
+        display: none;
+    }
+    .baner-content h4 {
+        font-size: 10.65px;
+    }
+    .more-content h1 {
+        font-size: 22.67px;
+    }
+    .more-burg-img {
+        margin-bottom: 50%;
+    }
+    .popular-content h1 {
+        font-size: 19.67px;
+    }
+    .popular-content h3 {
+        font-size: 22px;
+    }
+    .chose-content h3 {
+        font-size: 19px;
+    }
+    .chose-content h1 {
+        font-size: 26px;
+    }
+    .event-content h1 {
+        font-size: 30.67px;
+    }
+    .event-content p {
+        font-size: 11.83px;
+    }
+    .book-content h1 {
+        font-size: 30px;
+    }
+    .foter-burg-img-content p {
+        font-size: 9.67px;
+    }
+    .copy p {
+        font-size: 13.67px;
+    }
+    .locat span {
+        font-size: 15.67px;
+    }
+    .social-icon li a {
+        margin: 0 10px;
+    }
+    .popular-img {
+        padding-bottom: 8%;
+    }
+}
